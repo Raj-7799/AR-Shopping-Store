@@ -1,0 +1,26 @@
+html{
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  width:135px;
+  display:flex;
+  flex-direction: column;
+}
+
+body{
+  //background-color: blue;
+}
+
+.logo:{
+  width:135px;
+}
+
+.header_main{
+  width:135px;
+}
+
+img:{
+  width: 135px;
+}
