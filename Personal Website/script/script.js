@@ -43,8 +43,15 @@ $(window).scroll(function(){
 //price tag
 $('.products').hover(function(){
   $(this).children('.price-tag').addClass('visible');
+
+  $(this).children('.product_display').css({
+    'border': 'solid 3px black'
+  })
 },function(){
   $('.price-tag').removeClass('visible');
+  $(this).children('.product_display').css({
+    'border': 'none'
+  })
 }
 )
 //price tag end

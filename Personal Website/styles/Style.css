@@ -147,10 +147,6 @@ body{
   overflow: hidden;
 }
 
-.col-md-4{
-
-}
-
 @media(max-width: 775px){
   .container-fluid{
     margin: 0;
@@ -231,7 +227,7 @@ hr{
 .col-centered {
     display:inline-block;
     float:none;
-    text-align:left;
+    text-align: left;
     margin-right: 40px;
 }
 
@@ -316,4 +312,36 @@ hr{
 .visible{
   opacity: 1;
   transform: translateX(0);
+}
+
+.price{
+  position: absolute;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-style: italic;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 5px;
+  text-align: left;
+}
+
+.rate_button{
+  float: right;
+}
+
+.btn{
+  margin-top: 5px;
+  margin-left: -120px;
+  width:auto;
+  height: auto;
+  padding: 4px;
+  background-color: black;
+  border: solid 1px white;
+  color: white;
+  text-align: center;
+}
+
+.btn .btn-primary :hover{
+  font-weight: bolder;
+  background-color: black;
 }
