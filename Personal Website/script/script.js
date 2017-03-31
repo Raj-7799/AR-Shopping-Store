@@ -36,6 +36,11 @@ $(window).scroll(function(){
   if(Scroll>=700){
     $('.product').addClass('display');
   }
+  if(Scroll>=5000){
+    $('.tint').css({
+      'opacity':'0.5'
+    })
+  }
   })
 
 //main-banner parallax end
