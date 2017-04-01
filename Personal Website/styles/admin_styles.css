@@ -1,0 +1,10 @@
+.center{
+  text-align: center;
+  line-height: 40px;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.table{
+  margin: 15px;
+}
