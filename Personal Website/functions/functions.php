@@ -33,27 +33,31 @@
 
 function display_new_arrival(){
   global $con;
-  $display = "select * from products order by RAND() LIMIT 0,6";
+  $i=0;
+  $display = "select * from products order by id desc";
   $query = mysqli_query($con,$display);
   while($row = mysqli_fetch_array($query)){
-    $title = $row['title'];
-    $price = $row['price'];
-    $cateogary_name = $row['cateogary'];
-    $desc = $row['description'];
-    $keyword = $row['keyword'];
-    $image = $row['image'];
-    echo'<div class="col-xs-6  col-md-4  col-centered products">
-          <div class="product_title">
-            <span class="product_title_display">'.$title.'</span>
-          </div>
-        <img src="images/Products/'.$image.'" class="product_display">
-        <div class="price-tag">
-            <span class="price">price : <b>'.$price.'$</b></span>
-            <div class="rate_button">
-                <button type="button" class="btn btn-primary">Add to Cart</button>
+    if($i!=8){
+      $title = $row['title'];
+      $price = $row['price'];
+      $cateogary_name = $row['cateogary'];
+      $desc = $row['description'];
+      $keyword = $row['keyword'];
+      $image = $row['image'];
+      echo'<div class="col-xs-6  col-md-4  col-centered products">
+            <div class="product_title">
+              <span class="product_title_display">'.$title.'</span>
             </div>
-        </div>
-    </div>';
+          <img src="images/Products/'.$image.'" class="product_display">
+          <div class="price-tag">
+              <span class="price">price : <b>'.$price.'$</b></span>
+              <div class="rate_button">
+                  <button type="button" class="btn btn-primary">Add to Cart</button>
+              </div>
+          </div>
+      </div>';
+      $i++;
+    }
   }
 }
  ?>

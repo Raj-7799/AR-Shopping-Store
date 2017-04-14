@@ -25,6 +25,7 @@
         <nav class="head_nav">
             <ul>
                 <li><span class="glyphicon glyphicon-play active"></span><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Contact</a></li>
