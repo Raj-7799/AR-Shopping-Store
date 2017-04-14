@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -60,60 +62,63 @@
             <hr width="50%">
         </div>
         <div class="row row-centered product">
-            <div class="col-xs-6  col-md-4  col-centered products">
-                <img src="images\Products\black_seersucker_blazer.jpg" class="product_display">
-                <div class="price-tag">
-                    <span class="price">price : <b>1000$</b></span>
-                    <div class="rate_button">
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
+          <div class="col-xs-6  col-md-4  col-centered products">
+            <div class="product_title">
+              <span class="product_title_display">hello</span>
             </div>
-            <div class="col-xs-6  col-md-4   col-centered products">
-                <img src="images\Products\chino_trosures_with_ appliques.jpg" class="product_display">
-                <div class="price-tag">
-                    <span class="price">price : <b>1000$</b></span>
-                    <div class="rate_button">
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6  col-md-4   col-centered products">
-                <img src="images\Products\floral_print_shirt.jpg" class="product_display">
-                <div class="price-tag">
-                    <span class="price">price : <b>1000$</b></span>
-                    <div class="rate_button">
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6  col-md-4   col-centered products">
-                <img src="images\Products\guns_n_roses_tshirt.jpg" class="product_display">
-                <div class="price-tag">
-                    <span class="price">price : <b>1000$</b></span>
-                    <div class="rate_button">
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6  col-md-4  col-centered products">
-                <img src="images\Products\insect_print-shirt.jpg" class="product_display">
-                <div class="price-tag">
-                    <span class="price">price : <b>1000$</b></span>
-                    <div class="rate_button">
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6  col-md-4  col-centered products">
-                <img src="images\Products\lenin_waistcoat.jpg" class="product_display">
-                <div class="price-tag">
-                    <span class="price">price : <b>1000$</b></span>
-                    <div class="rate_button">
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
+              <img src="images\Products\black_seersucker_blazer.jpg" class="product_display">
+              <div class="price-tag">
+                  <span class="price">price : <b>1000$</b></span>
+                  <div class="rate_button">
+                      <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-6  col-md-4   col-centered products">
+              <img src="images\Products\chino_trosures_with_ appliques.jpg" class="product_display">
+              <div class="price-tag">
+                  <span class="price">price : <b>1000$</b></span>
+                  <div class="rate_button">
+                      <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-6  col-md-4   col-centered products">
+              <img src="images\Products\floral_print_shirt.jpg" class="product_display">
+              <div class="price-tag">
+                  <span class="price">price : <b>1000$</b></span>
+                  <div class="rate_button">
+                      <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-6  col-md-4   col-centered products">
+              <img src="images\Products\guns_n_roses_tshirt.jpg" class="product_display">
+              <div class="price-tag">
+                  <span class="price">price : <b>1000$</b></span>
+                  <div class="rate_button">
+                      <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-6  col-md-4  col-centered products">
+              <img src="images\Products\insect_print-shirt.jpg" class="product_display">
+              <div class="price-tag">
+                  <span class="price">price : <b>1000$</b></span>
+                  <div class="rate_button">
+                      <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-6  col-md-4  col-centered products">
+              <img src="images\Products\lenin_waistcoat.jpg" class="product_display">
+              <div class="price-tag">
+                  <span class="price">price : <b>1000$</b></span>
+                  <div class="rate_button">
+                      <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+              </div>
+          </div>
         </div>
         <hr width="50%"><br>
         <p class="row row-centered para">AR is the fun, friendly spot for style and decor that’s as expressive and unique as you are!<br> Inspired by feedback from our dedicated community, our exclusive line of apparel is available in a full range of sizes <br>― because we believe fashion

@@ -50,7 +50,7 @@ $('.products').hover(function(){
   $(this).children('.price-tag').addClass('visible');
 
   $(this).children('.product_display').css({
-    'border': 'solid 3px black'
+    'border': 'solid 3px rgb(84, 84, 84);'
   })
 },function(){
   $('.price-tag').removeClass('visible');

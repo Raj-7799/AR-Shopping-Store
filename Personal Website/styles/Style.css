@@ -324,7 +324,7 @@ hr{
 .price-tag{
   width: 320px;
   height: 40px;
-  background-color: black;
+  background-color: rgb(84, 84, 84);
   background-size: cover;
   transform: translateX(-20px);
   opacity: 0;
@@ -439,4 +439,21 @@ hr{
 .details{
   background-color: rgb(250, 250, 250);
   color:rgb(91, 91, 91);
+}
+
+
+.product_title{
+  width: 320px;
+  height: 40px;
+  background-color:rgb(84, 84, 84);
+  background-size: cover;
+  text-align: center;
+  padding: 10px;
+}
+
+.product_title_display{
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: 'Lato', sans-serif;
 }
