@@ -24,12 +24,12 @@
         <img class="logo">
         <nav class="head_nav">
             <ul>
-                <li><span class="glyphicon glyphicon-play active"></span><a href="#">Home</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Store</a></li>
+                <li><span class="glyphicon glyphicon-play"></span><a href="#" class="home_t">Home</a></li>
+                <li><span class="glyphicon glyphicon-play"></span><a href="#">Login</a></li>
+                <li><span class="glyphicon glyphicon-play"></span><a href="#" class="about_t">About</a></li>
+                <li><span class="glyphicon glyphicon-play"></span><a href="#" class="products_t">Products</a></li>
+                <li><span class="glyphicon glyphicon-play"></span><a href="#" class="contact_t">Contact</a></li>
+                <li><span class="glyphicon glyphicon-play"></span><a href="#" class="store_t">Store</a></li>
             </ul>
         </nav>
         <a class="head_nav_2" href="#">+email</a>
@@ -48,7 +48,7 @@
             <li><a href="#">Store</a></li>
         </ul>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid home">
         <div class="back">
             <div class="text"></div>
             <div class="bird"></div>
@@ -95,6 +95,83 @@
         </div><br><br><br>
         <br><br><br><br>
     </div>
+    <div class="jumbotron jumbotron-sm contact">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12 col-lg-12">
+                  <h1 class="h1">
+                      Contact us <small>Feel free to contact us</small></h1>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid contact">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="well well-sm">
+                  <form>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="name">
+                                  Name</label>
+                              <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                          </div>
+                          <div class="form-group">
+                              <label for="email">
+                                  Email Address</label>
+                              <div class="input-group">
+                                  <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                  </span>
+                                  <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                          </div>
+                          <div class="form-group">
+                              <label for="subject">
+                                  Subject</label>
+                              <select id="subject" name="subject" class="form-control" required="required">
+                                  <option value="na" selected="">Choose One:</option>
+                                  <option value="service">General Customer Service</option>
+                                  <option value="suggestions">Suggestions</option>
+                                  <option value="product">Product Support</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="name">
+                                  Message</label>
+                              <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                  placeholder="Message"></textarea>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                              Send Message</button>
+                      </div>
+                  </div>
+                  </form>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <form>
+              <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+              <address>
+                  <strong>IT Department</strong><br>
+                  Dwarkadas J Sanghvi College of Engineering<br>
+                  Plot No. U-15,J.V.P.D Scheme Vile Parle(W)<br>Mumbai - 400056<br>
+                  <abbr title="Phone">
+                      P:</abbr>
+                  (123) 456-7890
+              </address>
+              <address>
+                  <strong>Full Name</strong><br>
+                  <a href="mailto:#">first.last@example.com</a>
+              </address>
+              </form>
+          </div>
+      </div>
+  </div>
+
     <footer class="foot container-fluid">
         <div class="text-center center-block">
             <div class="row">

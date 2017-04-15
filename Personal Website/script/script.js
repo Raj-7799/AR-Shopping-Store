@@ -60,3 +60,19 @@ $('.products').hover(function(){
 }
 )
 //price tag end
+
+$('.contact_t').click(function(){
+  $('.home').hide();
+  $('.about').hide();
+  $('product_cat').hide();
+  $('.store')
+  $('.contact').show();
+})
+
+$('.home_t').click(function(){
+  $('.home').show();
+  $('.about').hide();
+  $('product_cat').hide();
+  $('.store')
+  $('.contact').hide();
+})

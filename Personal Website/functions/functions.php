@@ -50,7 +50,7 @@ function display_new_arrival(){
             </div>
           <img src="images/Products/'.$image.'" class="product_display">
           <div class="price-tag">
-              <span class="price">price : <b>'.$price.'$</b></span>
+              <span class="price">price : <b>'.$price.' ₹</b></span>
               <div class="rate_button">
                   <button type="button" class="btn btn-primary">Add to Cart</button>
               </div>
