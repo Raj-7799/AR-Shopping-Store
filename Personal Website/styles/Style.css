@@ -236,7 +236,7 @@ hr{
 }
 
 .glyphicon.glyphicon-play{
-  margin-right: 10px;
+  margin-right: 20px;
   color: white;
 }
 
@@ -471,4 +471,12 @@ color: #FFF;
 }
 .h1 small {
 font-size: 24px;
+}
+
+.glyphicon-play:before {
+    content: "\e072";
+}
+
+.active{
+  font-weight: bolder;
 }

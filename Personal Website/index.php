@@ -24,12 +24,12 @@
         <img class="logo">
         <nav class="head_nav">
             <ul>
-                <li><span class="glyphicon glyphicon-play"></span><a href="#" class="home_t">Home</a></li>
-                <li><span class="glyphicon glyphicon-play"></span><a href="#">Login</a></li>
-                <li><span class="glyphicon glyphicon-play"></span><a href="#" class="about_t">About</a></li>
-                <li><span class="glyphicon glyphicon-play"></span><a href="#" class="products_t">Products</a></li>
-                <li><span class="glyphicon glyphicon-play"></span><a href="#" class="contact_t">Contact</a></li>
-                <li><span class="glyphicon glyphicon-play"></span><a href="#" class="store_t">Store</a></li>
+                <li class=""><span></span><a href="#" class="home_t">Home</a></li>
+                <li><a href="login/register.html"><span></span>Login</a></li>
+                <li class =""><span></span><a href="#" class="about_t">About</a></li>
+                <li class=""><span></span><a href="#" class="products_t">Products</a></li>
+                <li class=""><span></span><a href="#" class="contact_t">Contact</a></li>
+                <li class=""><span></span><a href="#" class="store_t">Store</a></li>
             </ul>
         </nav>
         <a class="head_nav_2" href="#">+email</a>
@@ -41,11 +41,11 @@
     </header>
     <div class="mobile-nav-isopen">
         <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Store</a></li>
+            <li class="active home_t"><a href="#">Home</a></li>
+            <li class="about_t"><a href="#">About</a></li>
+            <li class="products_t"><a href="#">Products</a></li>
+            <li class="contact_t"><a href="#">Contact</a></li>
+            <li class="store_t"><a href="#">Store</a></li>
         </ul>
     </div>
     <div class="container-fluid home">
