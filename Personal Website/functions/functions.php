@@ -60,4 +60,21 @@ function display_new_arrival(){
     }
   }
 }
+function get_list(){
+  if(!empty($_SESSION)){
+    echo'<li><a href=""><span></span>Welcome '.$_SESSION['user'].'</a></li>';
+  }
+  else{
+    echo '<li><a href="login/register.php"><span></span>Login</a></li>';
+  }
+}
+function logout(){
+  if(!empty($_SESSION)){
+    echo'<li><a href="index.php?logout_1=true"?>Logout</a></li>';
+  }
+}
+function log_out(){
+  session_destroy();
+  unset($_GET);
+}
  ?>

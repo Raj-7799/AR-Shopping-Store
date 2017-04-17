@@ -1,5 +1,10 @@
 <?php
   include('functions/functions.php');
+  session_start();
+  if (isset($_GET['logout_1'])) {
+    log_out();
+    echo '<meta http-equiv="Location" content="index.php?log_out=false">';
+  }
  ?>
 
 <!DOCTYPE html>
@@ -25,11 +30,12 @@
         <nav class="head_nav">
             <ul>
                 <li class=""><span></span><a href="#" class="home_t">Home</a></li>
-                <li><a href="login/register.html"><span></span>Login</a></li>
+                <?php get_list(); ?>
                 <li class =""><span></span><a href="#" class="about_t">About</a></li>
                 <li class=""><span></span><a href="#" class="products_t">Products</a></li>
                 <li class=""><span></span><a href="#" class="contact_t">Contact</a></li>
                 <li class=""><span></span><a href="#" class="store_t">Store</a></li>
+                <?php logout(); ?>
             </ul>
         </nav>
         <a class="head_nav_2" href="#">+email</a>
@@ -42,6 +48,7 @@
     <div class="mobile-nav-isopen">
         <ul>
             <li class="active home_t"><a href="#">Home</a></li>
+            <li><a href="login/register.php">Login</a></li>
             <li class="about_t"><a href="#">About</a></li>
             <li class="products_t"><a href="#">Products</a></li>
             <li class="contact_t"><a href="#">Contact</a></li>
@@ -55,13 +62,13 @@
         </div>
         <div class="Title">
             <h1 class="title">Our Clothing Store</h1>
-            <hr width="50%"><br>
+            <hr width="50%">
             <p class="row row-centered para">AR is the fun, friendly spot for style and decor that’s as expressive and unique as you are!<br> Inspired by feedback from our dedicated community, our exclusive line of apparel is available in a full range of sizes <br>― because we believe
                 fashion is for every body. We also carry a curated selection of styles from hundreds of independent designers.
                 <br> Eight Hour Day showcases the people behind the company and humanizes its brand.<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim
                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p><br><br><br>
+            </p>
             <h1 class="title">New Arrivals</h1>
             <hr width="50%">
         </div>

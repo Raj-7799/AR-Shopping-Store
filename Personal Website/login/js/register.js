@@ -94,6 +94,7 @@ function validate_signup(){
     document.getElementById("contacts1").style.display="block";
   }
 //  setTimeout("hide_msg()",3000);
+document
 }
 
 
