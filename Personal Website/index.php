@@ -168,7 +168,7 @@
                   Plot No. U-15,J.V.P.D Scheme Vile Parle(W)<br>Mumbai - 400056<br>
                   <abbr title="Phone">
                       P:</abbr>
-                  (123) 456-7890
+                  +91-8879067799 / +91-9619631821
               </address>
               <address>
                   <strong>Full Name</strong><br>
@@ -178,7 +178,25 @@
           </div>
       </div>
   </div>
-
+  <div class="product_cat container-fluid">
+    <h1 class="title">Our Products</h1>
+    <div class="btn-group cateogary">
+         <button type="button" data-toggle="dropdown" class="btn-lg dropdown-toggle">Category <span class="caret"></span></button>
+         <ul class="dropdown-menu">
+             <li><a href="#">hello</a></li>
+         </ul>
+     </div>
+     <div class="btn-group sort">
+          <button type="button" data-toggle="dropdown" class="btn-lg dropdown-toggle">Sort By <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+              <li><a href="#">hello</a></li>
+          </ul>
+      </div>
+     <br><br><br><br><br><br>
+     <div class="row row-centered">
+       <?php display_products(); ?>
+     </div>
+  </div>
     <footer class="foot container-fluid">
         <div class="text-center center-block">
             <div class="row">
