@@ -1,6 +1,7 @@
 <?php
-  include('functions/functions.php');
   session_start();
+  include('functions/functions.php');
+  include_once('functions/cart.php');
  ?>
 
 <!DOCTYPE html>
@@ -173,25 +174,6 @@
               </form>
           </div>
       </div>
-  </div>
-  <div class="product_cat container-fluid">
-    <h1 class="title">Our Products</h1>
-    <div class="btn-group cateogary">
-         <button type="button" data-toggle="dropdown" class="btn-lg dropdown-toggle">Category <span class="caret"></span></button>
-         <ul class="dropdown-menu">
-             <li><a href="#">hello</a></li>
-         </ul>
-     </div>
-     <div class="btn-group sort">
-          <button type="button" data-toggle="dropdown" class="btn-lg dropdown-toggle">Sort By <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-              <li><a href="#">hello</a></li>
-          </ul>
-      </div>
-     <br><br><br><br><br><br>
-     <div class="row row-centered">
-       <?php display_products(); ?>
-     </div>
   </div>
     <footer class="foot container-fluid">
         <div class="text-center center-block">

@@ -53,32 +53,27 @@
             <li class="store_t"><a href="#">Store</a></li>
         </ul>
     </div>
-      <div class="product_cat container-fluid">
-        <h1 class="title">Our Products</h1>
-        <hr width=50%>
-        <div class="btn-group cateogary">
-             <button type="button" data-toggle="dropdown" class="btn-lg dropdown-toggle">Category <span class="caret"></span></button>
-             <ul class="dropdown-menu">
-                 <?php get_cat()?>
-             </ul>
-         </div>
-         <div class="btn-group sort">
-              <button type="button" data-toggle="dropdown" class="btn-lg dropdown-toggle">Sort By <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li><a href="products.php?sort=A">A - Z</a></li>
-                <li><a href="products.php?sort=popular">popularity</a></li>
-                <li><a href="products.php?sort=high">High - Low</a></li>
-                <li><a href="products.php?sort=low">Low - High</a></li>
-              </ul>
-          </div>
-         <br><br><br><br><br><br>
-         <div class="row row-centered">
-           <?php
-            $display = check_cat();
-            display_products($display);
-           ?>
-         </div>
-    </div>
+    <div class="container-fluid " width ="800px">
+      <h1 class="title">Your Cart</h1>
+      <hr width = 50%><br><br><br><br>
+      <div class="table-responsive attr">
+        <table class="table product-table table-hover">
+          <thead>
+            <tr>
+              <th></th>
+              <th><h3>Product</h3></th>
+              <th><h3>Price</h3></th>
+              <th><h3>Quantity</h3></th>
+              <th><h3>Amount</h3></th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php get_cart_items(); ?>
+          </tbody>
+        </table>
+      </div>
+
+  </div>
     <footer class="foot container-fluid">
         <div class="text-center center-block">
             <div class="row">

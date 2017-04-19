@@ -505,3 +505,13 @@ font-size: 24px;
   color: white;
   text-decoration: none;
 }
+
+.attr{
+  font-size: 20px;
+}
+
+.white:hover{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}

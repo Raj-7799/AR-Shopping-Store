@@ -52,7 +52,7 @@ function display_new_arrival(){
           <div class="price-tag">
               <span class="price">price : <b>'.$price.' ₹</b></span>
               <div class="rate_button">
-                  <button type="button" class="btn btn-primary"><a href="index.php?id='.$id.'">Add to Cart</a></button>
+                  <button type="button" class="btn btn-primary"><a class="white" href="index.php?id='.$id.'">Add to Cart</a></button>
               </div>
           </div>
       </div>';
@@ -61,8 +61,13 @@ function display_new_arrival(){
   }
 }
 function get_list(){
+  global $con;
   if(!empty($_SESSION)){
-    echo'<li><a href=""><span></span>Welcome '.$_SESSION['user'].'</a></li>';
+    echo'<li><a href=""><span class="glyphicon glyphicon-heart"></span>   Welcome '.$_SESSION['user'].'</a></li>';
+    $query = "select count(*) as COUNT from cart";
+    $result = mysqli_query($con, $query);
+    $row = mysqli_fetch_array($result);
+    echo '<li><a href="cart_display.php"><span class="glyphicon glyphicon-shopping-cart"></span>   Cart ( '.$row['COUNT'].' )</a></li>';
   }
   else{
     echo '<li><a href="login/register.php"><span></span>Login</a></li>';
@@ -74,10 +79,9 @@ function logout(){
   }
 }
 
-function display_products(){
+function display_products($display){
   global $con;
   $i=0;
-  $display = "select * from products";
   $query = mysqli_query($con,$display);
   while($row = mysqli_fetch_array($query)){
       $id = $row['id'];

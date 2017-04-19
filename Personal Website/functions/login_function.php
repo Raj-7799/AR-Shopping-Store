@@ -15,6 +15,11 @@
       if($row){
         if($pass == $row['password']){
             session_start();
+            if(isset($_SESSION['id'])){
+              $_SESSION['id'] = $row['id'];
+            }else{
+              $_SESSION['id'] = $row['id'];
+            }
             if(isset($_SESSION['user'])){
               $_SESSION['user'] = $row['username'];
             }else{
