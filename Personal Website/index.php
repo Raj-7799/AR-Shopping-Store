@@ -1,10 +1,6 @@
 <?php
   include('functions/functions.php');
   session_start();
-  if (isset($_GET['logout_1'])) {
-    log_out();
-    echo '<meta http-equiv="Location" content="index.php?log_out=false">';
-  }
  ?>
 
 <!DOCTYPE html>
@@ -32,7 +28,7 @@
                 <li class=""><span></span><a href="#" class="home_t">Home</a></li>
                 <?php get_list(); ?>
                 <li class =""><span></span><a href="#" class="about_t">About</a></li>
-                <li class=""><span></span><a href="#" class="products_t">Products</a></li>
+                <li class=""><span></span><a href="products.php" class="products_t">Products</a></li>
                 <li class=""><span></span><a href="#" class="contact_t">Contact</a></li>
                 <li class=""><span></span><a href="#" class="store_t">Store</a></li>
                 <?php logout(); ?>

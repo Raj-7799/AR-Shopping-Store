@@ -16,7 +16,8 @@
       $insert_query = "INSERT INTO `users` (`id`, `email`,`username`,`password`, `pincode`, `state`, `gender`, `phone`) VALUES (NULL, '$email', '$username', '$pass', '$pincode', '$slist', '$gender','$contact')";
       $bol = mysqli_query($con,$insert_query);
       if($bol){
-        echo "<br />successfull";
+        echo "<br />successfull <br />";
+        echo "<script>alert('Regietration Successful');window.location.href='../login/register.php';</script>";
       }
       else{
         echo "<br />unsuccessfull";

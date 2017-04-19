@@ -35,7 +35,7 @@
             }else{
               $_SESSION['phone'] = $row['phone'];
             }
-            echo $_SESSION['user']." You r successfully logged in use this link to go to homepage <a href='../index.php?logout_1=true'>main page</a>";
+            echo $_SESSION['user']." You r successfully logged in use this link to go to homepage <a href='../index.php?logout_1=false'>main page</a>";
         }
       }
       else{

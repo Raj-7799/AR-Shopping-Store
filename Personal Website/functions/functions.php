@@ -1,5 +1,4 @@
 <?php
-
   $con = mysqli_connect("localhost","root","","shopping_store");
   if ($con->connect_error) {
   die("Connection failed: " . $conn->connect_error);
@@ -71,12 +70,8 @@ function get_list(){
 }
 function logout(){
   if(!empty($_SESSION)){
-    echo'<li><a href="index.php?logout_1=true"?>Logout</a></li>';
+    echo'<li><a href="logout.php?logout=1"?>Logout</a></li>';
   }
-}
-function log_out(){
-  session_destroy();
-  unset($_GET);
 }
 
 function display_products(){
@@ -100,7 +95,7 @@ function display_products(){
           <div class="price-tag">
               <span class="price">price : <b>'.$price.' ₹</b></span>
               <div class="rate_button">
-                  <button type="button" class="btn btn-primary"><a class="white" href="index.php?id='.$id.'">Add to Cart</a></button>
+                  <button type="button" class="btn btn-primary"><a class="white" href="products.php?id='.$id.'">Add to Cart</a></button>
               </div>
           </div>
       </div>';
