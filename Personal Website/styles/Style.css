@@ -518,16 +518,100 @@ font-size: 24px;
 
 .landing-page{
   width: 600px;
-  height: 700px;
-  background-color: rgb(160, 232, 176);
+  height:700px;
+  background-color: rgb(218, 236, 222);
   border: solid black 3px;
   border-radius: 10%;
-  margin:50px;
-  margin-top: 20px;
+  overflow: hidden;
+}
+
+.landing-page-un{
+  width: 600px;
+  height:700px;
+  background-color: rgb(255, 198, 187);
+  border: solid black 3px;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.landing-page-header{
+  background-color: black;
+}
+
+.landing-page-header .logo{
+  margin: 10px;
 }
 
 .landing-page-content{
   color: rgb(64, 170, 0);
   size: 30px;
   font-family: sans-serif;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.landing-page-content-un{
+  color: rgb(64, 170, 0);
+  size: 30px;
+  font-family: sans-serif;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.landing-page-content-un{
+  color: rgb(255, 0, 0);
+  size: 30px;
+  font-family: sans-serif;
+
+  margin-top: 50px;
+}
+
+.modal-title{
+  text-align: center;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  display: block;
+}
+
+.product_display_modal{
+  width: 426.67px;
+  height: 533.33px;
+  background-size: contain;
+  background-position: center center;
+  text-align: center;
+}
+
+.un-img-size{
+  margin: 10px;
+  width: 255px;
+  height: 255px;
+}
+
+
+.black{
+  background-color: black;
+}
+
+.price-modal{
+  color:black;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media(max-width:610px){
+  .landing-page{
+    width :300px;
+    height : 500px
+  }
+  .landing-page-un{
+    width :300px;
+    height : 500px
+  }
+  .un-img-size{
+      margin: 10px;
+      width: 155px;
+      height: 155px;
+  }
 }

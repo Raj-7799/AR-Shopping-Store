@@ -46,13 +46,13 @@ function display_new_arrival(){
       $image = $row['image'];
       echo'<div class="col-xs-6  col-md-4  col-centered products">
             <div class="product_title">
-              <span class="product_title_display">'.$title.'</span>
+              <span class="product_title_display"">'.$title.'</span>
             </div>
           <img src="images/Products/'.$image.'" class="product_display">
           <div class="price-tag">
               <span class="price">price : <b>'.$price.' ₹</b></span>
               <div class="rate_button">
-                  <button type="button" class="btn btn-primary"><a class="white" href="index.php?id='.$id.'">Add to Cart</a></button>
+                  <button type="button" class="btn btn-primary"><a class="white" href="products.php?id='.$id.'">Add to Cart</a></button>
               </div>
           </div>
       </div>';
@@ -94,15 +94,36 @@ function display_products($display){
       $image = $row['image'];
       echo'<div class="col-xs-6  col-md-4  col-centered products">
             <div class="product_title">
-              <span class="product_title_display">'.$title.'</span>
+              <span class="product_title_display"">'.$title.'</span>
             </div>
-          <img src="images/Products/'.$image.'" class="product_display">
+          <img src="images/Products/'.$image.'" class="product_display" role="button" data-toggle="modal" data-target="#myModal'.$id.'">
           <div class="price-tag">
               <span class="price">price : <b>'.$price.' ₹</b></span>
               <div class="rate_button">
                   <button type="button" class="btn btn-primary"><a class="white" href="products.php?id='.$id.'">Add to Cart</a></button>
               </div>
           </div>
+          <div class="modal fade" id="myModal'.$id.'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header black ">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white;"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel"><span class="modal-title"">'.$title.'</span></h2>
+              </div>
+              <div class="modal-body">
+                  <center>
+                  <img src="images/Products/'.$image.'" class="product_display_modal">
+                  </center>
+                  <p class = row row-centered para>'.$desc.'</p><br /><br />
+              </div>
+              <div class="modal-footer">
+                <span class="price-modal">price : <b>'.$price.' ₹</b></span>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary"><a class="white" href="products.php?id='.$id.'">Add to Cart</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>';
   }
 }
