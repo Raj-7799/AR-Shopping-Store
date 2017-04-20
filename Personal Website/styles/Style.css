@@ -515,3 +515,19 @@ font-size: 24px;
   text-decoration: none;
   font-weight: bold;
 }
+
+.landing-page{
+  width: 600px;
+  height: 700px;
+  background-color: rgb(160, 232, 176);
+  border: solid black 3px;
+  border-radius: 10%;
+  margin:50px;
+  margin-top: 20px;
+}
+
+.landing-page-content{
+  color: rgb(64, 170, 0);
+  size: 30px;
+  font-family: sans-serif;
+}

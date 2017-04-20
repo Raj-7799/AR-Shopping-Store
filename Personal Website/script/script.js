@@ -1,12 +1,4 @@
 // scripts
-$(window).ready(function(){
-  $('.home').show();
-  $('.about').hide();
-  $('product_cat').hide();
-  $('.store')
-  $('.contact').hide();
-  $('home_t').addClass('active');
-})
 
 // nav-bar-dynamic
 var open=0;
@@ -67,71 +59,3 @@ $('.products').hover(function(){
 }
 )
 //price tag end
-
-$('.contact_t').click(function(){
-  $('.home').hide();
-  $('.about').hide();
-  $('product_cat').hide();
-  $('.store')
-  $('.contact').show();
-  $('.contact_t').addClass('active');
-  $('.home_t').removeClass('active');
-  $('.about_t').removeClass('active');
-  $('.store_t').removeClass('active');
-  $('.products_t').removeClass('active');
-})
-
-$('.home_t').click(function(){
-  $('.home').show();
-  $('.home_t').addClass('active');
-  $('.about').hide();
-  $('product_cat').hide();
-  $('.store').hide();
-  $('.contact').hide();
-  $('.contact_t').removeClass('active');
-  $('.about_t').removeClass('active');
-  $('.store_t').removeClass('active');
-  $('.products_t').removeClass('active');
-})
-
-$('.about_t').click(function(){
-  $('.home').hide();
-  $('.home_t').removeClass('active');
-  $('.about').show();
-  $('product_cat').hide();
-  $('.store').hide();
-  $('.contact').hide();
-  $('about_t').addClass('active');
-  $('.contact_t').removeClass('active');
-  $('.about_t').addClass('active');
-  $('.store_t').removeClass('active');
-  $('.products_t').removeClass('active');
-})
-
-$('.products_t').click(function(){
-  $('.home').hide();
-  $('.home_t').removeClass('active');
-  $('.about').hide();
-  $('product_cat').show();
-  $('.store').hide();
-  $('.contact').hide();
-  $('about_t').addClass('active');
-  $('.contact_t').removeClass('active');
-  $('.about_t').removeClass('active');
-  $('.store_t').removeClass('active');
-  $('.products_t').addClass('active');
-})
-
-$('.store_t').click(function(){
-  $('.home').hide();
-  $('.home_t').removeClass('active');
-  $('.about').hide();
-  $('product_cat').hide();
-  $('.store').show();
-  $('.contact').hide();
-  $('about_t').removeClass('active');
-  $('.contact_t').removeClass('active');
-  $('.about_t').removeClass('active');
-  $('.products_t').removeClass('active');
-  $('.store_t').addClass('active');
-})

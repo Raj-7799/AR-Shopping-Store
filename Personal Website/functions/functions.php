@@ -64,7 +64,8 @@ function get_list(){
   global $con;
   if(!empty($_SESSION)){
     echo'<li><a href=""><span class="glyphicon glyphicon-heart"></span>   Welcome '.$_SESSION['user'].'</a></li>';
-    $query = "select count(*) as COUNT from cart";
+    $user_id = $_SESSION['id'];
+    $query = "select COUNT(*) as COUNT from cart where user_id=".$user_id;
     $result = mysqli_query($con, $query);
     $row = mysqli_fetch_array($result);
     echo '<li><a href="cart_display.php"><span class="glyphicon glyphicon-shopping-cart"></span>   Cart ( '.$row['COUNT'].' )</a></li>';

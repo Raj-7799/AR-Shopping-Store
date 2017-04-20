@@ -27,12 +27,12 @@
         <img class="logo">
         <nav class="head_nav">
             <ul>
-                <li class=""><span></span><a href="#" class="home_t">Home</a></li>
+                <li class=""><span></span><a href="index.php" class="home_t">Home</a></li>
                 <?php get_list(); ?>
-                <li class =""><span></span><a href="#" class="about_t">About</a></li>
-                <li class=""><span></span><a href="#" class="products_t">Products</a></li>
+                <li class =""><span></span><a href="aboutus.php" class="about_t">About</a></li>
+                <li class=""><span></span><a href="products.php" class="products_t">Products</a></li>
                 <li class=""><span></span><a href="#" class="contact_t">Contact</a></li>
-                <li class=""><span></span><a href="#" class="store_t">Store</a></li>
+                <li class=""><span></span><a href="stores.php" class="store_t">Store</a></li>
                 <?php logout(); ?>
             </ul>
         </nav>
@@ -45,12 +45,13 @@
     </header>
     <div class="mobile-nav-isopen">
         <ul>
-            <li class="active home_t"><a href="#">Home</a></li>
-            <li><a href="login/register.php">Login</a></li>
-            <li class="about_t"><a href="#">About</a></li>
-            <li class="products_t"><a href="#">Products</a></li>
-            <li class="contact_t"><a href="#">Contact</a></li>
-            <li class="store_t"><a href="#">Store</a></li>
+          <li class="active home_t"><a href="index.php">Home</a></li>
+          <?php get_list(); ?>
+          <li class="about_t"><a href="aboutus.php">About</a></li>
+          <li class="products_t"><a href="products.php">Products</a></li>
+          <li class="contact_t"><a href="#">Contact</a></li>
+          <li class="store_t"><a href="stores.php">Store</a></li>
+          <?php logout(); ?>
         </ul>
     </div>
       <div class="product_cat container-fluid">
@@ -71,7 +72,7 @@
                 <li><a href="products.php?sort=low">Low - High</a></li>
               </ul>
           </div>
-         <br><br><br><br><br><br>
+         <br><br><br><br><br><br><br>
          <div class="row row-centered">
            <?php
             $display = check_cat();
