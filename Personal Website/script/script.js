@@ -16,6 +16,7 @@ $("#menu").click(function(){
     }
   }
 )
+
 //nav-bar-dynamic  end
 
 //main-banner parallax
@@ -59,3 +60,8 @@ $('.products').hover(function(){
 }
 )
 //price tag end
+
+//tooltip initialize
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});

@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles\Style.css">
 </head>
 
@@ -26,12 +27,12 @@
         <img class="logo">
         <nav class="head_nav">
             <ul>
-                <li class=""><span></span><a href="index.php" class="home_t">Home</a></li>
+                <li class=""><span></span><a href="index.php" class="home_t"><i class="fa fa-home" aria-hidden="true"></i>  Home</a></li>
                 <?php get_list(); ?>
-                <li class =""><span></span><a href="aboutus.php" class="about_t">About</a></li>
-                <li class=""><span></span><a href="products.php" class="products_t">Products</a></li>
-                <li class=""><span></span><a href="http://adityashinde989.000webhostapp.com" class="contact_t">Contact</a></li>
-                <li class=""><span></span><a href="stores.php" class="store_t">Store</a></li>
+                <li class =""><span></span><a href="aboutus.php" class="about_t"><i class="fa fa-question-circle-o" aria-hidden="true"></i>  About</a></li>
+                <li class=""><span></span><a href="products.php" class="products_t"><i class="fa fa-product-hunt" aria-hidden="true"></i>   Products</a></li>
+                <li class=""><span></span><a href="http://adityashinde989.000webhostapp.com" class="contact_t"><i class="fa fa-address-card-o" aria-hidden="true"></i>   Contact</a></li>
+                <li class=""><span></span><a href="stores.php" class="store_t"><i class="fa fa-street-view" aria-hidden="true"></i>   Store</a></li>
                 <?php logout(); ?>
             </ul>
         </nav>
@@ -44,12 +45,12 @@
     </header>
     <div class="mobile-nav-isopen">
         <ul>
-          <li class="active home_t"><a href="index.php">Home</a></li>
+          <li class="active home_t"><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i>  Home</a></li>
           <?php get_list(); ?>
-          <li class="about_t"><a href="aboutus.php">About</a></li>
-          <li class="products_t"><a href="products.php">Products</a></li>
-          <li class="contact_t"><a href="http://adityashinde989.000webhostapp.com/Personal-Website/index.php">Contact</a></li>
-          <li class="store_t"><a href="stores.php">Store</a></li>
+          <li class="about_t"><a href="aboutus.php"><i class="fa fa-question-circle-o" aria-hidden="true"></i>  About</a></li>
+          <li class="products_t"><a href="products.php"><i class="fa fa-product-hunt" aria-hidden="true"></i>   Products</a></li>
+          <li class="contact_t"><a href="http://adityashinde989.000webhostapp.com/Personal-Website/index.php"><i class="fa fa-address-card-o" aria-hidden="true"></i>  Contact</a></li>
+          <li class="store_t"><a href="stores.php"><i class="fa fa-street-view" aria-hidden="true"></i>  Store</a></li>
           <?php logout(); ?>
         </ul>
     </div>
@@ -147,6 +148,7 @@
             <a href="#"><i class="fa fa-envelope-square fa-3x social" id="social-em"></i></a>
         </div>
     </footer>
+    <script src="https://use.fontawesome.com/80dcb2c1fd.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="script\script.js"></script>

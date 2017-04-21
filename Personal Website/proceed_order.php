@@ -3,9 +3,8 @@
   include_once('functions/functions.php');
   include_once('functions/cat_sort.php');
   include_once('functions/cart.php');
-  include_once('functions/update_quantity.php');
+  cart_to_orders();
  ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -22,17 +21,19 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <link rel="stylesheet" href="styles\Style.css">
     <!-- <script type="text/javascript">
-      function update_quantity(val){
+      function find(){
         if(window.XMLHttpRequest){
           xmlhttp = new XMLHttpRequest();
         }else{
-          xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+          xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
-        xmlhttp.onreadystatechange = function(){
-          if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-
-          }
-        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("result").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open('GET','search.php?search_text='+document.search_1.search.value,true);
+        xmlhttp.send();
       }
     </script> -->
 </head>
@@ -69,28 +70,23 @@
         <?php logout(); ?>
       </ul>
   </div>
-    <div class="container-fluid " width ="800px">
-      <h1 class="title">Your Cart</h1>
-      <hr width = 50%><br><br><br><br>
-      <div class="table-responsive attr">
-        <table class="table product-table table-hover">
-          <thead>
-            <tr>
-              <th></th>
-              <th style="text-align:center"><h3>Product</h3></th>
-              <th><h3>Price</h3></th>
-              <th><h3>Quantity<a href="#" style="text-decoration: none; color:black;" data-toggle="tooltip" title="quantity must me between 1-10">
-                <i class="fa fa-question-circle" aria-hidden="true"></i></a></h3></th>
-              <th style="text-align:center"><h3>Amount</h3></th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php get_cart_items(); ?>
-          </tbody>
-        </table>
+    <div class="container-fluid" style="margin:0;">
+      <center>
+          <div class="landing-page-content">
+            <div class="row row-centered landing-page container-fluid" >
+              <div class="landing-page-header">
+                <img class="logo">
+              </div>
+            <img src="./images/Success-Transparent.png" alt="" class="un-img-size"><br>
+            <h1>Order placed successfully</h1>
+            <p style="color:red; margin-top:20px;">
+              *please click the link below to view your products
+            </p><br>
+            <button type="button" name="button" class="btn-success btn-lg large"><a href="orders.php" class="white">Orders</a>   <i class="fa fa-angle-right right"></i></button>
+          </div>
+        </div>
+      </center>
       </div>
-
-  </div>
     <footer class="foot container-fluid">
         <div class="text-center center-block">
             <div class="row">

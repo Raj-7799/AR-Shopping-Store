@@ -38,40 +38,41 @@
 </head>
 
 <body>
-  <header class="header-position">
-      <img class="logo">
-      <nav class="head_nav">
-          <ul>
-              <li class=""><span></span><a href="index.php" class="home_t"><i class="fa fa-home" aria-hidden="true"></i>  Home</a></li>
+    <header class="header-position">
+        <img class="logo">
+        <nav class="head_nav">
+            <ul>
+              <li class=""><span></span><a href="index.php" class="home_t">Home</a></li>
               <?php get_list(); ?>
-              <li class =""><span></span><a href="aboutus.php" class="about_t"><i class="fa fa-question-circle-o" aria-hidden="true"></i>  About</a></li>
-              <li class=""><span></span><a href="products.php" class="products_t"><i class="fa fa-product-hunt" aria-hidden="true"></i>   Products</a></li>
-              <li class=""><span></span><a href="http://adityashinde989.000webhostapp.com" class="contact_t"><i class="fa fa-address-card-o" aria-hidden="true"></i>   Contact</a></li>
-              <li class=""><span></span><a href="stores.php" class="store_t"><i class="fa fa-street-view" aria-hidden="true"></i>   Store</a></li>
+              <li class =""><span></span><a href="aboutus.php" class="about_t">About</a></li>
+              <li class=""><span></span><a href="products.php" class="products_t">Products</a></li>
+              <li class=""><span></span><a href="http://adityashinde989.000webhostapp.com/Personal-Website/index.php" class="contact_t">Contact</a></li>
+              <li class=""><span></span><a href="stores.php" class="store_t">Store</a></li>
               <?php logout(); ?>
-          </ul>
-      </nav>
-      <a class="head_nav_2" href="#">+email</a>
-      <div class="mobile-nav">
-          <button type="button" id="menu">
-        <span class="glyphicon glyphicon-align-justify"></span>
-    </button>
-      </div>
-  </header>
-  <div class="mobile-nav-isopen">
-      <ul>
-        <li class="active home_t"><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i>  Home</a></li>
-        <?php get_list(); ?>
-        <li class="about_t"><a href="aboutus.php"><i class="fa fa-question-circle-o" aria-hidden="true"></i>  About</a></li>
-        <li class="products_t"><a href="products.php"><i class="fa fa-product-hunt" aria-hidden="true"></i>   Products</a></li>
-        <li class="contact_t"><a href="http://adityashinde989.000webhostapp.com/Personal-Website/index.php"><i class="fa fa-address-card-o" aria-hidden="true"></i>  Contact</a></li>
-        <li class="store_t"><a href="stores.php"><i class="fa fa-street-view" aria-hidden="true"></i>  Store</a></li>
-        <?php logout(); ?>
-      </ul>
-  </div>
-    <div class="container-fluid " width ="800px">
-      <h1 class="title">Your Cart</h1>
+            </ul>
+        </nav>
+        <a class="head_nav_2" href="#">+email</a>
+        <div class="mobile-nav">
+            <button type="button" id="menu">
+          <span class="glyphicon glyphicon-align-justify"></span>
+      </button>
+        </div>
+    </header>
+    <div class="mobile-nav-isopen">
+        <ul>
+            <li class="active home_t"><a href="index.php">Home</a></li>
+            <?php get_list(); ?>
+            <li class="about_t"><a href="aboutus.php">About</a></li>
+            <li class="products_t"><a href="products.php">Products</a></li>
+            <li class="contact_t"><a href="http://adityashinde989.000webhostapp.com/Personal-Website/index.php">Contact</a></li>
+            <li class="store_t"><a href="stores.php">Store</a></li>
+            <?php logout(); ?>
+        </ul>
+    </div>
+    <div class="container-fluid " style="width :100%">
+      <h1 class="title">Your Orders</h1>
       <hr width = 50%><br><br><br><br>
+      <center>
       <div class="table-responsive attr">
         <table class="table product-table table-hover">
           <thead>
@@ -79,17 +80,13 @@
               <th></th>
               <th style="text-align:center"><h3>Product</h3></th>
               <th><h3>Price</h3></th>
-              <th><h3>Quantity<a href="#" style="text-decoration: none; color:black;" data-toggle="tooltip" title="quantity must me between 1-10">
-                <i class="fa fa-question-circle" aria-hidden="true"></i></a></h3></th>
-              <th style="text-align:center"><h3>Amount</h3></th>
-            </tr>
           </thead>
           <tbody>
-            <?php get_cart_items(); ?>
+            <?php get_order_items(); ?>
           </tbody>
         </table>
       </div>
-
+    </center>
   </div>
     <footer class="foot container-fluid">
         <div class="text-center center-block">

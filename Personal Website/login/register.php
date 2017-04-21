@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body background-color="#25808B">
+<body background-color="#959d9e">
 <!--  <img src="logo_snap.png" class="image">-->
   <div class="cotn_principal">
     <div class="cont_centrar">

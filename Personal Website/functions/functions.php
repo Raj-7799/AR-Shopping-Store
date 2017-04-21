@@ -4,6 +4,9 @@
   die("Connection failed: " . $conn->connect_error);
   }
 
+  // $query_search_key = "select keyword from products;";
+  // $result_query_key = mysqli_query($con,$query_search_key);
+
   function insert(){
     global $con;
     $title = $_POST['title'];
@@ -63,20 +66,23 @@ function display_new_arrival(){
 function get_list(){
   global $con;
   if(!empty($_SESSION)){
-    echo'<li><a href=""><span class="glyphicon glyphicon-heart"></span>   Welcome '.$_SESSION['user'].'</a></li>';
+    echo'<li><a href="orders.php" class="white"><span class="glyphicon glyphicon-heart"></span>  Welcome '.$_SESSION['user'].'</a></li>';
     $user_id = $_SESSION['id'];
-    $query = "select COUNT(*) as COUNT from cart where user_id=".$user_id;
+    $query = "select SUM(quantity) as COUNT from cart where user_id=".$user_id;
     $result = mysqli_query($con, $query);
     $row = mysqli_fetch_array($result);
-    echo '<li><a href="cart_display.php"><span class="glyphicon glyphicon-shopping-cart"></span>   Cart ( '.$row['COUNT'].' )</a></li>';
+    if(!empty($row['COUNT'])){  echo '<li><a href="cart_display.php"><span class="glyphicon glyphicon-shopping-cart"></span>   Cart ( '.$row['COUNT'].' )</a></li>';
+    }else{
+    echo '<li><a href="cart_display.php"><span class="glyphicon glyphicon-shopping-cart"></span>   Cart (0)</a></li>';}
   }
   else{
-    echo '<li><a href="login/register.php"><span></span>Login</a></li>';
+    echo '<li><a href="login/register.php"><span></span><i class="fa fa-sign-in" aria-hidden="true"></i>
+  Login</a></li>';
   }
 }
 function logout(){
   if(!empty($_SESSION)){
-    echo'<li><a href="logout.php?logout=1"?>Logout</a></li>';
+    echo'<li><a href="logout.php?logout=1"?><i class="fa fa-sign-out" aria-hidden="true"></i>  Logout</a></li>';
   }
 }
 
@@ -127,4 +133,36 @@ function display_products($display){
       </div>';
   }
 }
+  function get_order_items(){
+    global $con;
+    $user_id = $_SESSION['id'];
+    $query = "SELECT * FROM `orders` WHERE `user_id` = ".$user_id."";
+    $result = mysqli_query($con,$query);
+    $query1 = "SELECT * FROM `total` WHERE `user_id` =".$user_id."";
+    $result1 = mysqli_query($con,$query1);
+    $get_result = mysqli_fetch_array($result1);
+    $price_total = $get_result['total'];
+    while($row = mysqli_fetch_array($result)){
+      $product_id = $row['product_id'];
+      $query_product = "SELECT * FROM products where id=".$product_id;
+      $result_product = mysqli_query($con,$query_product);
+      $row_product = mysqli_fetch_array($result_product);
+      $product_title = $row_product['title'];
+      $price = $row_product['price'];
+      $image = $row_product['image'];
+      echo '<tr>
+        <th scope="row">
+          <img src = "images/product_images/'.$image.'" height="200px"/>
+        </th>
+        <td ><h3 style="padding:0;margin:0;text-align:center"><strong>'.$product_title.'</strong></h3></td>
+        <td colspan="2">'.$price.'</td>
+        </tr>';
+    }
+    echo '<tr>
+      <td colspan="2"></td>
+      <td><h3><strong>Total</strong></h3></td>
+      <td><h3>'.$price_total.'</h3></td>
+      <td><button type="button" class="btn-lg btn-primary" size="40" style="margin-top:10px;"><a href="index.php" class="white">Home  <i class="fa fa-angle-right right"></i></a></button></td>
+    </tr>';
+  }
  ?>
