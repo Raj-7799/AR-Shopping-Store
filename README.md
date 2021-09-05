@@ -29,3 +29,11 @@ To attract customers attention it uses smooth parallax effects and maintains a m
 
 ### Full-fledged cart
 ![](github-images/cart.png)
+
+### Project-Timeline 
+01 / 2017 - 03-2017
+Capstone project for Web-Programming Course
+
+### Contributors
+* Raj Patel [Raj-7799](https://github.com/Raj-7799)
+* Aditya Shinde [Aditya-1212](https://github.com/Aditya-1212)
