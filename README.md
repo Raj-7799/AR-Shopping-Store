@@ -11,4 +11,21 @@ To attract customers attention it uses smooth parallax effects and maintains a m
 ``` source <path to database folder>/shopping_store.sql```
 4. The last step is to copy the `shopping-store` folder to `www/html`. With default apache installation it should be under `/var/www`.
 
+## Design and website overview
 
+### Store landing
+![](github-images/store_dashboard.gif)
+![](github-images/store_dashboard_parallax.gif)
+
+### Login and Sign-up
+![](github-images/login.jpg)
+
+### Product page with option to filter by cateogary and sort by price / popularity
+![](github-images/product_page.png)
+![](github-images/product_page_cateogaries.png)
+
+### Product details page with option to add to cart
+![](github-images/product_details.gif)
+
+### Full-fledged cart
+![](github-images/cart.png)
